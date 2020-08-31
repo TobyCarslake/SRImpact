@@ -1,0 +1,142 @@
+.grid > div{
+    /* background: rgb(34, 34, 34); */
+    /* padding: .3rem; */
+    border-style: inset;
+    /* border-radius: 11px; */
+    /* border-color: lightgray; */
+    border-width: thin;
+    /*grid shadow from here https://themesberg.com/blog/tutorial/neomorphic-elements-css-html-tutorial */
+    /* box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff; */
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(33, 60px);
+    /* grid-template-columns: 300px repeat(9, auto); */
+    grid-template-columns: 200px repeat(9, minmax(min-content, 100px));
+    /* gap: 6px; */
+    /* margin: 10px;
+    padding: 10px; */
+    width: 95%;
+    margin: auto;   
+}
+
+body{
+    /* margin: 2rem; */
+    width: 980px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.h1 {
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.h2 {
+    font-size: 1.5em;
+}
+.h3 {
+    color: #eeeeee;
+    font-size: 1em;
+}
+.h4 {
+    color: black;
+    font-size: .8em;
+}
+.h5 {
+    color: black;
+    font-size: 1em;
+}
+.title{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 15px;
+    border-radius: 11px;
+    text-align: center;
+    margin: 10px;
+}
+.description {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 11px;
+}
+/* a { color: blue;
+} */
+/* a:hover {
+    font-weight: bold;
+} */
+.tippy-box {
+    font-size: 1em;
+    background-color:#333333;
+    color: white;
+    /* box-shadow: 0 0 20px 5px rgba(50, 50, 50, 0.25); */
+    /* border-style: solid;
+    border-width: 1px; */
+}
+/* select all svg circles with the region class */
+/* .region > svg > circle {
+    fill: lightseagreen;
+} */
+
+/* .grid > .dfatRegionSub {
+    background: whitesmoke;
+}
+
+.grid > .pubYearSub {
+    background: lightgray;
+}
+
+.grid > .ageGroupSub {
+    background: darkgrey;
+}
+.grid > .region {
+    background: whitesmoke;
+}
+.grid > .pubYear {
+    background: lightgray;
+}
+.grid > .age {
+    background: darkgrey;
+}
+.dfatRegion{
+    grid-column: 2/7;
+    background: lightseagreen;
+}
+.yearRange{
+    grid-column: 7/11;
+    background: orange;
+}
+.ageGroup{
+    grid-column: 11/16;
+    background: darkcyan;   
+} */
+.header {
+    grid-column: 1/11;
+}
+circle {
+    fill: #FF5F33;
+}
+.headRow {
+    display: flex;
+    background-color: #0F0FEB;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.interventionRow {
+    display: flex;
+    background-color: #7474c9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* justify-self: center;
+    align-self: center; */
+}
