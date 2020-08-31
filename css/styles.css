@@ -136,5 +136,8 @@ circle {
 .header {
     grid-column: 1/11;
     font-size: 2em;
-    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
