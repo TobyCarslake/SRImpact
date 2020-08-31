@@ -1,3 +1,4 @@
+
 .grid > div{
     /* background: rgb(34, 34, 34); */
     /* padding: .3rem; */
@@ -28,13 +29,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.h1 {
-    font-size: 2em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 
-}
 .h2 {
     font-size: 1.5em;
 }
@@ -116,9 +111,7 @@ body{
     grid-column: 11/16;
     background: darkcyan;   
 } */
-.header {
-    grid-column: 1/11;
-}
+
 circle {
     fill: #FF5F33;
 }
@@ -139,4 +132,9 @@ circle {
     align-items: center;
     /* justify-self: center;
     align-self: center; */
+}
+.header {
+    grid-column: 1/11;
+    font-size: 2em;
+    margin: auto;
 }
