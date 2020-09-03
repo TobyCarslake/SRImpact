@@ -11,35 +11,24 @@
   <link href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
   <link href="https://unpkg.com/tippy.js/dist/tippy.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v4.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
   </style>
 </head>
 
 <body>
+<div id="header" class="header" tabindex="0">
+  <h1>Wellbeing Systematic Review Impact Map</h1>
+</div>
+<div id="maps" class="maps">
+  <button class="button" onclick="document.location='index.html'">Impact Map</button><button class="button" onclick="document.location='gap.html'">Evidence Map</button><br><br><br>
+</div>
+<div>
+<svg id="my_dataviz" class="legend" height=100 width=980></svg>
+</div>
     
-<!-- <header class="title">
-    <h1>Improving young children's learning in economically developing countries - Interactive Gap Map</h1>
-</header> 
-
-<div class="description">
-  This Gap Map is an output from the <a target="_blank" href="https://research.acer.edu.au/monitoring_learning/38/" title="Improving young children’s learning in economically developing countries: What works, why, and where? Scoping review">Improving young children’s learning in economically developing countries: What works, why, and where? Scoping review</a>.
-  It displays each of the review's 109 studies by Intervention type and then by Region, Publication Year Range and Age group.
-
-  <h3>Improving young children’s learning in economically developing countries: What works, why, and where? Scoping review</h3>
-  <p>The past two decades have seen growing international recognition that children's learning does not begin at school. The learning opportunities that children experience in the early years of life lay important foundations for their learning at school, and the effects of quality early learning can persist beyond school into adulthood. This means that an increasing number of countries recognise the importance of investment in early learning and development, to provide quality early learning opportunities for all children.</p>
-  <p>Less is currently known about how to target this investment, to deliver the best possible outcomes for children and families. What is known about effective interventions to support children's learning in the years before school largely originates from developed countries. This means that developing countries - who have much to gain from the benefits of quality early learning - have an especially limited evidence base to guide investment in children's learning in the earliest years. By the time these children reach school, valuable opportunities to support their learning have often already been lost.</p>
-  <p>This scoping review examines the evidence base for interventions to support young children's learning in the years before school, with a focus on economically developing countries. While many of the insights from research into early interventions in developed countries are also applicable in developing country contexts, this study recognizes that such countries face particular challenges that require a different range of solutions. Hence, the purpose of this study is twofold:</p>
-  <p style="margin-left:30px;">First, it seeks to strengthen the evidence base for developing countries to draw on in their pursuit of the UN Sustainable Development Goal related to quality early learning.</p>
-  <p style="margin-left:30px;">Second, it is aimed at identifying areas where more and where less is known to inform where further primary studies are required to broaden the evidence base.</p>
-
-  Hover over the numbers in the cells to display information about the studies. (click on the cell to hide the displayed studies)
-</div> -->
-
 <div class="grid" tabindex="0">
-  <div id="header" class="header" tabindex="0">
-    Wellbeing Systematic Review Impact Map
-    </div>
   <div id="type" class="headRow" tabindex="0">
     Intervention type    
     </div>
@@ -71,7 +60,7 @@
       Internalising
     </div>
   <div id='belongingRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="60" height="60">Improving mental wellbeing: Belonging & engagement
+    <img src="images/wellbeing.png" alt="wellbeing image" width="58" height="58">Improving mental wellbeing: Belonging & engagement
   </div>
   <div id="belongingacademic" class="belonging academic" tabindex="0">
   </div>
@@ -92,7 +81,7 @@
   <div id="belonginginternalising" class="belonging internalising" tabindex="0">
   </div>
   <div id='mentoringRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="60" height="60">Improving mental wellbeing: Mentoring
+    <img src="images/wellbeing.png" alt="wellbeing image" width="58" height="58">Improving mental wellbeing: Mentoring
   </div>
   <div id="mentoringacademic" class="mentoring academic" tabindex="0">
   </div>
@@ -113,7 +102,7 @@
   <div id="mentoringinternalising" class="mentoring internalising" tabindex="0">
   </div>
   <div id='socialRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="60" height="60">Improving mental wellbeing: Social-emotional skills
+    <img src="images/wellbeing.png" alt="wellbeing image" width="58" height="58">Improving mental wellbeing: Social-emotional skills
   </div>
   <div id="socialacademic" class="social academic" tabindex="0">
   </div>
@@ -134,7 +123,7 @@
   <div id="socialinternalising" class="social internalising" tabindex="0">
   </div>
   <div id='cognitiveRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="60" height="60">Improving mental wellbeing: Cognitive skills
+    <img src="images/wellbeing.png" alt="wellbeing image" width="58" height="58">Improving mental wellbeing: Cognitive skills
   </div>
   <div id="cognitiveacademic" class="cognitive academic" tabindex="0">
   </div>
@@ -155,7 +144,7 @@
   <div id="cognitiveinternalising" class="cognitive internalising" tabindex="0">
   </div>
   <div id='behavioralRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="60" height="60">Improving mental wellbeing: Behavioral skills
+    <img src="images/wellbeing.png" alt="wellbeing image" width="58" height="58">Improving mental wellbeing: Behavioral skills
   </div>
   <div id="behaviouralacademic" class="behavioural academic" tabindex="0">
   </div>
@@ -176,7 +165,7 @@
   <div id="behaviouralinternalising" class="behavioural internalising" tabindex="0">
   </div>
   <div id='physicalRow' class="interventionRow" tabindex="0">
-    <img src="images/physical.png" alt="wellbeing image" width="60" height="60">Encouraging physical activity: Exercise & relaxation
+    <img src="images/physical.png" alt="wellbeing image" width="58" height="58">Encouraging physical activity: Exercise & relaxation
   </div>
   <div id="physicalacademic" class="physical academic" tabindex="0">
   </div>
@@ -197,7 +186,7 @@
   <div id="physicalinternalising" class="physical internalising" tabindex="0">
   </div>
   <div id='preventingRow' class="interventionRow" tabindex="0">
-    <img src="images/preventing.png" alt="wellbeing image" width="60" height="60">Preventing harm from tobacco, alcohol & drugs
+    <img src="images/preventing.png" alt="wellbeing image" width="58" height="58">Preventing harm from tobacco, alcohol & drugs
   </div>
   <div id="preventingacademic" class="preventing academic" tabindex="0">
   </div>
@@ -403,26 +392,26 @@
   </div>
   <div id="directinternalising" class="direct internalising" tabindex="0">
   </div>
-  <div id='indirect' class="interventionRow" tabindex="0">
+  <div id='indir' class="interventionRow" tabindex="0">
     Indirect
   </div>
-  <div id="indirectacademic" class="indirect academic" tabindex="0">
+  <div id="indiracademic" class="indir academic" tabindex="0">
   </div>
-  <div id="indirectynumeracy" class="indirect numeracy" tabindex="0">
+  <div id="indirynumeracy" class="indir numeracy" tabindex="0">
   </div>
-  <div id="indirectliteracy" class="indirect literacy" tabindex="0">
+  <div id="indirliteracy" class="indir literacy" tabindex="0">
   </div>
-  <div id="indirectgpa" class="indirect gpa" tabindex="0">
+  <div id="indirgpa" class="indir gpa" tabindex="0">
   </div>
-  <div id="indirectwellbeing" class="indirect wellbeing" tabindex="0">
+  <div id="indirwellbeing" class="indir wellbeing" tabindex="0">
   </div>
-  <div id="indirectocialemotional" class="indirect socialemotional" tabindex="0">
+  <div id="indirocialemotional" class="indir socialemotional" tabindex="0">
   </div>
-  <div id="indirectbehaviouralskills" class="indirect behaviouralskills" tabindex="0">
+  <div id="indirbehaviouralskills" class="indir behaviouralskills" tabindex="0">
   </div>
-  <div id="indirectcognitiveskills" class="indirect cognitiveskills" tabindex="0">
+  <div id="indircognitiveskills" class="indir cognitiveskills" tabindex="0">
   </div>
-  <div id="indirectinternalising" class="indirect internalising" tabindex="0">
+  <div id="indirinternalising" class="indir internalising" tabindex="0">
   </div>
   <div id="duration" class="headRow" tabindex="0">
     Program duration    
@@ -766,10 +755,6 @@
   </div>
   <div id="universalinternalising" class="universal internalising" tabindex="0">
   </div>
-
-
-
-
 <!-- <div class="description" tabindex="0">
     Further information
   </h3>
@@ -777,5 +762,6 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="js/app.js"></script>
+    
 </body>
 </html>

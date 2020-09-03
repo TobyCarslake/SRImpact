@@ -1,4 +1,3 @@
-
 .grid > div{
     /* background: rgb(34, 34, 34); */
     /* padding: .3rem; */
@@ -11,25 +10,21 @@
 }
 .grid{
     display: grid;
-    grid-template-rows: repeat(33, 60px);
-    /* grid-template-columns: 300px repeat(9, auto); */
+    grid-template-rows: repeat(32, 60px);
     grid-template-columns: 200px repeat(9, minmax(min-content, 100px));
-    /* gap: 6px; */
-    /* margin: 10px;
-    padding: 10px; */
     width: 95%;
     margin: auto;   
 }
-
 body{
-    /* margin: 2rem; */
     width: 980px;
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
     margin-left: auto;
     margin-right: auto;
 }
-
+.h1 {
+    font-size: 1em;
+}
 .h2 {
     font-size: 1.5em;
 }
@@ -78,42 +73,12 @@ body{
 /* .region > svg > circle {
     fill: lightseagreen;
 } */
-
-/* .grid > .dfatRegionSub {
-    background: whitesmoke;
-}
-
-.grid > .pubYearSub {
-    background: lightgray;
-}
-
-.grid > .ageGroupSub {
-    background: darkgrey;
-}
-.grid > .region {
-    background: whitesmoke;
-}
-.grid > .pubYear {
-    background: lightgray;
-}
-.grid > .age {
-    background: darkgrey;
-}
-.dfatRegion{
-    grid-column: 2/7;
-    background: lightseagreen;
-}
-.yearRange{
-    grid-column: 7/11;
-    background: orange;
-}
-.ageGroup{
-    grid-column: 11/16;
-    background: darkcyan;   
-} */
-
 circle {
     fill: #FF5F33;
+}
+/* to change svg circle on hover */
+.circle:hover {
+    stroke: black;    
 }
 .headRow {
     display: flex;
@@ -134,10 +99,34 @@ circle {
     align-self: center; */
 }
 .header {
-    grid-column: 1/11;
-    font-size: 2em;
+    /* grid-column: 1/11; */
+    /* font-size: 2em; */
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.legend {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.maps  {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    font-family: inherit;
+    background-color: #0F0FEB;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 1px;
+    cursor: pointer;
 }
