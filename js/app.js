@@ -96,7 +96,8 @@ svg.append("circle").attr("cx",25).attr("cy",60).attr("r", 20).style("fill", "#F
 // svg.append("circle").attr("cx",20).attr("cy",50).attr("r", 6).style("fill", "#404080")
 svg.append("text").attr("x", 5).attr("y", 13).text("Legend").attr("font-weight", "bold").style("font-size", "").attr("alignment-baseline","middle")
 svg.append("text").attr("x", 15).attr("y", 33).text("+2").attr("font-weight", "bold").style("font-size", "1.5em").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 55).attr("y", 40).text(" = number of months of growth compared with control group").style("font-size", "").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 55).attr("y", 33).text(" = number of months of growth compared with control group").style("font-size", "").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 55).attr("y", 50).text("** = significance at < .001; * = significance at < .05").style("font-size", "").attr("alignment-baseline","middle")
 // svg.append("text").attr("x", 50).attr("y", 50).text("variable B").style("font-size", "").attr("alignment-baseline","middle")
 
 
