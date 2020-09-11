@@ -3,7 +3,7 @@ xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       const response = JSON.parse(xhttp.responseText);
       const data = response.data;
-      let allGrid = document.querySelectorAll(".belonging, .mentoring, .social, .cognitive, .behavioural, .physical, .preventing,.primary,.middle,.secondary,.combined,.other,.direct,.indir,.short,.moderate,.long,.one,.classroom,.small,.medium,.large,.academicrisk,.disadvantaged,.specialneeds,.universal");
+      let allGrid = document.querySelectorAll(".belonging, .mentoring, .social, .cognitive, .behavioural, .physical, .preventing,.primary,.middle,.secondary,.combined,.other,.direct,.indir,.short,.moderate,.longest,.one,.classroom,.small,.medium,.large,.academicrisk,.disadvantaged,.specialneeds,.universal");
       let allGridArray = Array.from(allGrid);
 
         for (i=0; i < allGridArray.length; i++) {

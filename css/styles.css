@@ -80,6 +80,9 @@ circle {
 .circle:hover {
     stroke: black;    
 }
+.academic, .wellbeing{
+    background-color: #cccccc;
+}
 .headRow {
     display: flex;
     background-color: #0F0FEB;
