@@ -3,109 +3,207 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Wellbeing Systematic Review - Evidence Gap Map</title>
   <meta name="description" content="ACER Wellbeing Systematic Review Evidence Gap Map">
   <meta name="ACER" content="Gap Map">
-  
-  <link href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700%7CRoboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.acer.org/assets/css/dest/bootstrap/acer-bootstrap-4.3.1.min.css?1599614323">
+  <link rel="stylesheet" href="https://www.acer.org/assets/css/dest/acer-base-1.min.css" />
+  <link rel="stylesheet" href="https://www.acer.org/assets/css/dest/acer-base-1.min.css?1600320829" />
+  <link rel="stylesheet" href="https://www.acer.org/assets/css/dest/sections/great-britain.min.css?1600320829" />
+  <link href="https://unpkg.com/tippy.js@6/animations/scale.css">
   <link href="https://unpkg.com/tippy.js/dist/tippy.css">
   <link rel="stylesheet" href="css/stylesgap.css">
   <script src="https://d3js.org/d3.v4.js"></script>
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
   </style>
+
+<style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+
+
 </head>
 
 <body>
+
+  
+ <nav id="dropdown-nav">
+  <div class="consistent-top-navbar navbar navbar-expand-lg international-office-animated-nav navbar-light bg-white fixed-top navbar-static-top scrolled-nav">
+      <div class="container animated-collapse-icon">
+          <a class="navbar-brand position-relative ml-3 ml-sm-0 mr-lg-4 mr-xl-6" href="https://www.acer.org"><svg width="97" height="32" viewBox="0 0 97 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.146 32H0V0h23.146v32zm-4.76-20.44h-1.814L4.896 24.561c-1.061 1.206-2.02 2.111-3.56 2.212H1.3l-.137.536H7.67l.137-.536H7.19c-.924 0-1.575-.268-1.78-.67-.034-.1-.069-.168-.069-.268 0-.302.172-.637.514-1.006 0 0 3.732-4.121 3.766-4.155h6.437v4.356c0 1.307-.787 1.776-2.944 1.776h-.035l-.136.536h7.772l.137-.536h-.069c-1.986 0-2.362-.502-2.362-1.373V11.56h-.034zm-5.272 5.328s2.739-3.116 2.876-3.25v5.964H10.75c.103-.134 2.363-2.714 2.363-2.714zM47.764 32H24.618V0h23.146v32zM27.529 19.97c0 1.944.753 3.72 2.157 5.094 1.78 1.742 4.45 2.714 7.498 2.714 1.678 0 2.842-.234 3.766-.436.89-.167 1.61-.335 2.431-.234h.035v-.034c.65-.938 1.403-2.446 1.78-3.552l.034-.066h-.616v.033c-1.507 2.38-3.766 3.585-6.677 3.585-2.088 0-4.006-.804-5.478-2.211-1.438-1.407-2.226-3.317-2.226-5.395 0-4.188 2.98-6.97 7.43-6.97 2.91 0 5.308 1.441 6.232 3.72v.033h.582l-.24-3.619h-.479v.034c-.034.034-.137.134-.445.134-.274 0-.616-.1-1.096-.235-.958-.301-2.396-.737-4.725-.737-5.786 0-9.963 3.418-9.963 8.143zM72.245 32H49.099V0h23.146v32zM66.15 12.13H52.9v.536h.65c1.849 0 2.157.603 2.157 1.91v10.253c0 1.441-.377 1.944-2.534 1.944h-.821v.536H67.04l.445-3.72h-.582v.034c-.685 2.044-1.232 2.714-3.15 2.714h-4.246c-.992 0-1.438-.2-1.438-1.307v-5.126h4.623c1.095 0 1.61.167 1.814 1.876v.034h.617v-4.692h-.617v.034c-.137 1.307-.547 1.776-1.54 1.776h-4.897v-5.897h5.753c.958 0 1.643.402 1.986 2.48v.033h.582l-.24-3.452v.034zM97 8.679V32H73.854V0h14.141v8.679H97zm-14.449 3.216c-1.78 0-2.328.034-3.458.067l-1.199.067c-.924.034-1.848.1-2.294.1h-.034v.537h.65c1.576 0 2.02.436 2.02 1.91v10.22c0 1.541-.479 1.977-2.156 1.977h-.514v.536h7.875v-.536h-.685c-1.643 0-2.157-.436-2.157-1.776v-4.055h.103c.377.034.72.034 1.267.034l1.472-.034h.377c.753.436 1.746 1.207 2.808 2.145l1.814 1.608c2.431 2.145 3.732 3.083 8.526 2.882H97v-.503h-.034c-1.952-.1-3.595-.87-5.41-2.446l-2.191-1.91c-1.199-1.038-2.055-1.742-3.082-2.48 2.226-.602 3.595-2.11 3.595-3.953a3.476 3.476 0 0 0-1.061-2.547c-1.13-1.24-3.321-1.843-6.266-1.843zm-.616.637c3.595 0 5.272 1.24 5.272 3.887 0 1.173-.342 2.077-.992 2.747-.822.805-2.123 1.207-3.938 1.207H81.9c-.41 0-.753 0-1.198-.034V12.6c.41-.067.753-.067 1.233-.067z" fill="#333"></path><path d="M89.296 0v7.54H97L89.296 0z" fill="#333"></path></svg><span class="sr-only">ACER</span></a>
+          
+          <div class="logo-brand-lockup d-flex flex-column">
+              
+              
+          </div>
+          
+          <div id="gb-country-filters">
+              <div class="top-bar-hot-links position-absolute">
+          </div>
+          
+                  <button class="border-0 d-block position-absolute search-modal-button scrolled-search" ><svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9 16.49l-4.3-4.3a.38.38 0 0 0-.28-.1h-.49c.56-.65 1-1.4 1.3-2.21a7 7 0 0 0-.5-6.22A7.3 7.3 0 0 0 .01 7.3a7.2 7.2 0 0 0 3.62 6.33 7.31 7.31 0 0 0 8.47-.8v.48c0 .1.04.2.1.29l4.3 4.25c.07.1.16.14.28.14.12 0 .22-.04.32-.1l.8-.81c.07-.1.11-.2.11-.32a.38.38 0 0 0-.1-.28zM7.3 12.94A5.6 5.6 0 0 1 4.5 2.46a5.4 5.4 0 0 1 2.81-.77c1.01 0 1.95.26 2.82.77.86.5 1.54 1.17 2.03 2.04a5.4 5.4 0 0 1 0 5.63 5.58 5.58 0 0 1-2.04 2.07c-.86.5-1.8.74-2.8.74z" fill=""></path></svg><span class="sr-only">Search</span></button>
+              </div> 
+          
+          
+          <button class="navbar-toggler mr-3 mr-sm-0 position-relative collapsed" type="button" data-toggle="collapse" data-target="#navbarBase" aria-controls="navbarBase" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-wrapper position-relative">
+                  <span class="icon-bar-wrapper">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </span>
+                  <span class="nav-bar-text">Menu</span>
+              </span>
+          </button>
+          
+          <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarBase">
+              
+<ul class="navbar-nav mt-2 mt-lg-0">
+              
+              <li class="nav-item">
+                  <a class="nav-link no-anchor-styles smoothscroll" href="https://www.acer.org/au/discover">Discover <span class="sr-only">(current)</span></a>
+              </li>
+              
+              
+              
+              <li class="nav-item ">
+                  <a class="nav-link no-anchor-styles" href="https://www.acer.org/au/research" id="node_2" aria-haspopup="true" aria-expanded="false">
+                      Research
+                  </a>
+                  
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                  <a class="nav-link no-anchor-styles smoothscroll" href="https://www.acer.org/au/assessment">Assessment</a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                  <a class="nav-link no-anchor-styles smoothscroll" href="https://www.acer.org/au/professional-learning">Professional learning</a>
+              </li>
+              
+              
+              
+              <li class="nav-item">
+                  <a class="nav-link no-anchor-styles smoothscroll" href="https://www.acer.org/au/publications-and-resources">Publications &amp; resources</a>
+              </li>
+              
+              
+              
+              <li class="nav-item ">
+                  <a class="nav-link no-anchor-styles smoothscroll" href="https://www.acer.org/au/about-us">
+                      About us
+                  </a>
+                  
+                      
+
+                  </div>
+              </li>
+              
+              
+</ul>
+          </div>
+      </div>
+  </div>
+</nav> 
+
+
+
+
+  
 <div id="header" class="header" tabindex="0">
-  <h1>Wellbeing Systematic Review - Evidence Gap Map</h1>
+  <h1>Wellbeing Systematic Review</h1>
 </div>
 <div id="maps" class="maps">
-  <button class="button" onclick="document.location='index.html'">Impact Map</button><button class="button" onclick="document.location='gap.html'">Evidence Map</button><br><br><br>
+  <button class="button" onclick="document.location='index.html'">Impact Map</button><button class="button" onclick="document.location='gap.html'">Evidence Gap Map</button>
 </div>
-<!-- <div>
-<svg id="my_dataviz" class="legend" height=100 width=980></svg>
-</div> -->
-    
-<div class="grid" tabindex="0">
-  
+<div id="description" class="description">
+  <span>A systematic review of intervention research examining effective student wellbeing in schools and their academic outcomes.<br><br><h5>Evidence Gap Map</h5>The tables below visualise the available evidence and gaps in evidence that underpin the results presented in the Impact Map. The 75 studies were categorised into seven intervention types and defined by five sets of characteristics. For example, the most evidence was available for social-emotional skills programs in primary schools, delivered by the trained classroom teacher over a long period, targeting academically at-risk students. Empty cells indicate a lack of high-quality evidence for the type of intervention and characteristic, and suggest a need for more interventions of that nature and the need for further research.</span> 
+</div>
+<div id="tog" class="tog">
+  <button class="button" onclick="setting()">School setting</button><button class="button" onclick="mode()">Intervention mode</button><button class="button" onclick="duration()">Program duration</button><button class="button" onclick="grouping()">Grouping size</button><button class="button" onclick="approach()">Intervention approach</button>
+  <span>Click to toggle outcomes</span>
+</div>  
+<div id="grid" class="grid" tabindex="0">
     <div id="blank" class="headRow">
-      
     </div>
-    <div id="setting" class="setting headRow" tabindex="0">
+    <div id="setting" class="setting headRow schoolSetting" tabindex="0">
       School setting
     </div>
-    <div id="mode" class="mode headRow" tabindex="0">
+    <div id="mode" class="mode headRow interventionMode" tabindex="0">
       Intervention mode
     </div>
-    <div id="duration" class="duration headRow" tabindex="0">
+    <div id="duration" class="duration headRow programDuration" tabindex="0">
       Program duration
     </div>
-    <div id="grouping"  class="grouping headRow" tabindex="0">
+    <div id="grouping"  class="grouping headRow groupingSize" tabindex="0">
       Grouping size
     </div>
-    <div id="approach" class="approach headRow" tabindex="0">
+    <div id="approach" class="approach headRow interventionApproach" tabindex="0">
       Intervention approach
     </div>
     <div class="headRow" tabindex="0">
       Intervention type
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow schoolSetting" tabindex="0">
       Primary
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow schoolSetting" tabindex="0">
       Middle
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow schoolSetting" tabindex="0">
       Secondary
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow schoolSetting" tabindex="0">
       Combined K-12
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow schoolSetting" tabindex="0">
       Other
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionMode" tabindex="0">
       Direct
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionMode" tabindex="0">
       Indirect
     </div>
-    <div class="headRow" tabindex="0">
-      Short (<3 months)
+    <div class="headRow programDuration" tabindex="0">
+      Short (&lt;3 months)
     </div>
-    <div class="headRow" tabindex="0">
-      Moderate (< year)    
+    <div class="headRow programDuration" tabindex="0">
+      Moderate (&lt; year)    
     </div>
-    <div class="headRow" tabindex="0">
-      Long (> year)
+    <div class="headRow programDuration" tabindex="0">
+      Long (&gt; year)
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow groupingSize" tabindex="0">
       One-on-one
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow groupingSize" tabindex="0">
       Classroom
     </div>
-    <div class="headRow" tabindex="0">
-      Small (<11)
+    <div class="headRow groupingSize" tabindex="0">
+      Small (&lt;11)
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow groupingSize" tabindex="0">
       Medium (11-20)
     </div>
-    <div class="headRow" tabindex="0">
-      Large (>20)
+    <div class="headRow groupingSize" tabindex="0">
+      Large (&gt;20)
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionApproach" tabindex="0">
       Targeted: Academic risk
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionApproach" tabindex="0">
       Targeted: Disad-vantaged
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionApproach" tabindex="0">
       Targeted: Special needs
     </div>
-    <div class="headRow" tabindex="0">
+    <div class="headRow interventionApproach" tabindex="0">
       Universal
     </div>
 
@@ -113,7 +211,7 @@
 
 
   <div id='belongingRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Belonging & engagement
+    <img class="image" src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Belonging & engagement
   </div>
   <div id="belongingprimary" class="belonging primary" tabindex="0">
   </div>
@@ -162,7 +260,7 @@
 
 
   <div id='mentoringRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Mentoring
+    <img class="image" src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Mentoring
   </div>
   <div id="mentoringprimary" class="mentoring primary" tabindex="0">
   </div>
@@ -203,7 +301,7 @@
   <div id="mentoringuniversal" class="mentoring universal" tabindex="0">
   </div>
   <div id='socialRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Social-emotional skills
+    <img class="image" src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Social-emotional skills
   </div>
   <div id="socialprimary" class="social primary" tabindex="0">
   </div>
@@ -244,7 +342,7 @@
   <div id="socialuniversal" class="social universal" tabindex="0">
   </div>
   <div id='cognitiveRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Cognitive skills
+    <img class="image" src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Cognitive skills
   </div>
   <div id="cognitiveprimary" class="cognitive primary" tabindex="0">
   </div>
@@ -285,7 +383,7 @@
   <div id="cognitiveuniversal" class="cognitive universal" tabindex="0">
   </div>
   <div id='behavioralRow' class="interventionRow" tabindex="0">
-    <img src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Behavioral skills
+    <img class="image" src="images/wellbeing.png" alt="wellbeing image" width="50" height="50">Improving mental wellbeing: Behavioral skills
   </div>
   <div id="behaviouralprimary" class="behavioural primary" tabindex="0">
   </div>
@@ -326,7 +424,7 @@
   <div id="behaviouraluniversal" class="behavioural universal" tabindex="0">
   </div>
   <div id='physicalRow' class="interventionRow" tabindex="0">
-    <img src="images/physical.png" alt="wellbeing image" width="50" height="50">Encouraging physical activity: Exercise & relaxation
+    <img class="image" src="images/physical.png" alt="wellbeing image" width="50" height="50">Encouraging physical activity: Exercise & relaxation
   </div>
   <div id="physicalprimary" class="physical primary" tabindex="0">
   </div>
@@ -367,7 +465,7 @@
   <div id="physicaluniversal" class="physical universal" tabindex="0">
   </div>
   <div id='preventingRow' class="interventionRow" tabindex="0">
-    <img src="images/preventing.png" alt="wellbeing image" width="50" height="50">Preventing harm from tobacco, alcohol & drugs
+    <img class="image" src="images/preventing.png" alt="wellbeing image" width="50" height="50">Preventing harm from tobacco, alcohol & drugs
   </div>
   <div id="preventingprimary" class="preventing primary" tabindex="0">
   </div>
@@ -407,15 +505,38 @@
   </div>
   <div id="preventinguniversal" class="preventing universal" tabindex="0">
   </div>
+</div>
 
+<footer class="bg-dark">
+  <div class="container">
+      <div class="row py-4 text-white">
+          <div class="col-12 col-md-2">
+              <a href="https://www.acer.org/"><svg width="97" height="32" viewBox="0 0 97 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.146 32H0V0h23.146v32zm-4.76-20.44h-1.814L4.896 24.561c-1.061 1.206-2.02 2.111-3.56 2.212H1.3l-.137.536H7.67l.137-.536H7.19c-.924 0-1.575-.268-1.78-.67-.034-.1-.069-.168-.069-.268 0-.302.172-.637.514-1.006 0 0 3.732-4.121 3.766-4.155h6.437v4.356c0 1.307-.787 1.776-2.944 1.776h-.035l-.136.536h7.772l.137-.536h-.069c-1.986 0-2.362-.502-2.362-1.373V11.56h-.034zm-5.272 5.328s2.739-3.116 2.876-3.25v5.964H10.75c.103-.134 2.363-2.714 2.363-2.714zM47.764 32H24.618V0h23.146v32zM27.529 19.97c0 1.944.753 3.72 2.157 5.094 1.78 1.742 4.45 2.714 7.498 2.714 1.678 0 2.842-.234 3.766-.436.89-.167 1.61-.335 2.431-.234h.035v-.034c.65-.938 1.403-2.446 1.78-3.552l.034-.066h-.616v.033c-1.507 2.38-3.766 3.585-6.677 3.585-2.088 0-4.006-.804-5.478-2.211-1.438-1.407-2.226-3.317-2.226-5.395 0-4.188 2.98-6.97 7.43-6.97 2.91 0 5.308 1.441 6.232 3.72v.033h.582l-.24-3.619h-.479v.034c-.034.034-.137.134-.445.134-.274 0-.616-.1-1.096-.235-.958-.301-2.396-.737-4.725-.737-5.786 0-9.963 3.418-9.963 8.143zM72.245 32H49.099V0h23.146v32zM66.15 12.13H52.9v.536h.65c1.849 0 2.157.603 2.157 1.91v10.253c0 1.441-.377 1.944-2.534 1.944h-.821v.536H67.04l.445-3.72h-.582v.034c-.685 2.044-1.232 2.714-3.15 2.714h-4.246c-.992 0-1.438-.2-1.438-1.307v-5.126h4.623c1.095 0 1.61.167 1.814 1.876v.034h.617v-4.692h-.617v.034c-.137 1.307-.547 1.776-1.54 1.776h-4.897v-5.897h5.753c.958 0 1.643.402 1.986 2.48v.033h.582l-.24-3.452v.034zM97 8.679V32H73.854V0h14.141v8.679H97zm-14.449 3.216c-1.78 0-2.328.034-3.458.067l-1.199.067c-.924.034-1.848.1-2.294.1h-.034v.537h.65c1.576 0 2.02.436 2.02 1.91v10.22c0 1.541-.479 1.977-2.156 1.977h-.514v.536h7.875v-.536h-.685c-1.643 0-2.157-.436-2.157-1.776v-4.055h.103c.377.034.72.034 1.267.034l1.472-.034h.377c.753.436 1.746 1.207 2.808 2.145l1.814 1.608c2.431 2.145 3.732 3.083 8.526 2.882H97v-.503h-.034c-1.952-.1-3.595-.87-5.41-2.446l-2.191-1.91c-1.199-1.038-2.055-1.742-3.082-2.48 2.226-.602 3.595-2.11 3.595-3.953a3.476 3.476 0 0 0-1.061-2.547c-1.13-1.24-3.321-1.843-6.266-1.843zm-.616.637c3.595 0 5.272 1.24 5.272 3.887 0 1.173-.342 2.077-.992 2.747-.822.805-2.123 1.207-3.938 1.207H81.9c-.41 0-.753 0-1.198-.034V12.6c.41-.067.753-.067 1.233-.067z" fill="#FFF"></path><path d="M89.296 0v7.54H97L89.296 0z" fill="#FFF"></path></svg><span class="sr-only">ACER</span></a>
+          </div>
+          <div class="col-12 col-md-10">
+              
+                      <div class="mt-4 mt-md-0 text-lg-right">
+<ul class="d-inline site-map pl-0 mb-0">
+  
+  <li class="d-inline"><a class="no-anchor-styles underline-on-hover mr-3" href="https://www.acer.org/privacy">Privacy policy</a></li>
+  <li class="d-inline"><a class="no-anchor-styles underline-on-hover mr-3" href="https://www.acer.org/online-terms-of-use">Online terms of use</a></li>
+  <li class="d-inline"><a class="no-anchor-styles underline-on-hover mr-3" href="https://www.acer.org/au/about-us/careers">Careers</a></li>
+  <li class="d-inline"><a class="no-anchor-styles underline-on-hover mr-0 io-contact-link" href="https://www.acer.org/au/about-us/locations">Contact</a></li>
+</ul><br>
+<small><span class="mr-0">© 2020 Australian Council for Educational Research — ACER, official partner of UNESCO</span><span class="ml-3">ABN: 19 004 398 145</span></small>
+</div>
 
-<!-- <div class="description" tabindex="0">
-    Further information
-  </h3>
-</div> -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="js/appgap.js"></script>
-    
+                  
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js" integrity="sha384-vilVZsMIwXgPUnHQKsriY2wkMmSqqbHRst8+6uxPrtHdZQaejD+yHzdnNzH8+duW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="js/appgap.js"></script>
 </body>
 </html>

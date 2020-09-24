@@ -1,28 +1,23 @@
 .grid > div{
-    /* background: rgb(34, 34, 34); */
-    /* padding: .3rem; */
     border-style: inset;
-    /* border-radius: 11px; */
-    /* border-color: lightgray; */
     border-width: thin;
-    /*grid shadow from here https://themesberg.com/blog/tutorial/neomorphic-elements-css-html-tutorial */
-    /* box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff; */
+    font-family: 'Nunito', sans-serif;
 }
 .grid{
     display: grid;
+    max-width: 980px;
     grid-template-rows: repeat(32, 60px);
     grid-template-columns: 200px repeat(9, minmax(min-content, 100px));
-    width: 95%;
     margin: auto;   
 }
 body{
-    width: 980px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     margin-left: auto;
     margin-right: auto;
 }
 .h1 {
+    
     font-size: 1em;
 }
 .h2 {
@@ -49,30 +44,17 @@ body{
     margin: 10px;
 }
 .description {
-    background-color: white;
-    color: black;
-    border-style: solid;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 11px;
+    display: flex;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
-/* a { color: blue;
-} */
-/* a:hover {
-    font-weight: bold;
-} */
 .tippy-box {
     font-size: 1em;
     background-color:#333333;
     color: white;
-    /* box-shadow: 0 0 20px 5px rgba(50, 50, 50, 0.25); */
-    /* border-style: solid;
-    border-width: 1px; */
 }
-/* select all svg circles with the region class */
-/* .region > svg > circle {
-    fill: lightseagreen;
-} */
 circle {
     fill: #FF5F33;
 }
@@ -81,7 +63,7 @@ circle {
     stroke: black;    
 }
 .academic, .wellbeing{
-    background-color: #cccccc;
+    background-color: lightgrey;
 }
 .headRow {
     display: flex;
@@ -90,46 +72,77 @@ circle {
     text-align: center;
     justify-content: center;
     align-items: center;
+    line-height: .9rem;
 }
 .interventionRow {
+    font-size: 1em;
     display: flex;
     background-color: #7474c9;
     color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
-    /* justify-self: center;
-    align-self: center; */
+    line-height: .9rem;
 }
 .header {
-    /* grid-column: 1/11; */
-    /* font-size: 2em; */
-    display: flex;
+    margin-top: 100px;
+    display: block;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-.legend {
-    display: flex;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.maps  {
-    display: flex;
-    width: 95%;
+.maps, .legend, .tog {
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
 }
 .button {
-    font-family: inherit;
     background-color: #0F0FEB;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     display: inline-block;
     font-size: 1em;
     margin: 4px 1px;
     cursor: pointer;
+}
+.button:hover {
+    background-color: #0F0FEB;
+    opacity: .5;
+}
+.button:active {
+    opacity: .8;
+}
+.bg-dark {
+    margin-top: 5px;
+}
+@media only screen and (min-width: 979px) {
+    .tog {
+        display: none;
+    }
+}
+@media only screen and (max-width: 979px) {
+    body {
+        width: auto;
+        
+    }
+    .interventionRow, .headRow {
+        font-size: .8em;
+        line-height: .5rem
+    }
+    div.wel {
+        display: none;
+    }
+    .grid {
+        grid-template-columns: repeat(5, 20vmin);
+    }
+
+    #grid, .tog, #legend{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image {
+        display: none;
+    }
 }
